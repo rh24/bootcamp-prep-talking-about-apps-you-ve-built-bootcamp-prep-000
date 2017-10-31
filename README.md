@@ -65,7 +65,7 @@ This is often the most interesting part of an interview. Interviewers, especiall
 
 > Everything was going fine until we tried to load a 2GB file into the database. That’s when we realized SQLite couldn't handle the size and we had to migrate to AWS S3.
 
-> We connected to Instagram’s API but noticed our app started freezing whenever we would listen for hashtag updates. Then we realized we were tracking worldwide hashtags and our app was getting pummeled with hundreds of messages each second. Thin, the default server for Rails is single-threaded and wasn’t able to handle the load. Thankfully we switched to Unicorn and overcame the concurrency issues.
+> We connected to Instagram’s API but noticed our app started freezing whenever we would listen for hashtag updates. Then we realized we were tracking worldwide hashtags and our app was getting pummeled with hundreds of messages each second. Thin, the default server for Rails, is single-threaded and wasn’t able to handle the load. Thankfully we switched to Unicorn and overcame the concurrency issues.
 
 A few things to remember here:
 - Make sure to talk about actual **solutions**. Don’t bring up any hacks/workarounds that you know will ultimately break later. Make sure your solutions were thoughtful and airtight.
